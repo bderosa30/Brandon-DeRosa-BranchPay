@@ -28,10 +28,11 @@
 ### Testing
 * Integration tests are run and validated against supplied figures from the interview email.
 * It is not a comprehensive test suite but the rate limiting interceptor and core data processing
-  functions are tested against. 
+  functions are tested against.
+  * GSON serialization/deserialization is covered by integration tests, but if 
+    time permitted I would implement tests for those.
 
 ### Deploy/Run
 Download and install Docker, 
 * build dockerfile using ```docker build -t brandonderosa .```
-  * ```docker pull eclipse-temurin:17-jre-jammy``` if neccessary
 * run docker image using ```docker run -p 8090:8090 brandonderosa```
