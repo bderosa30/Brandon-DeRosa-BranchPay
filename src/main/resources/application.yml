@@ -1,0 +1,17 @@
+app:
+  okhttp:
+    userService:
+      base_url: "https://api.github.com"
+      conn_timeout: "3000"
+      read_timeout: "5000"
+
+spring:
+  web:
+    resources:
+      add-mappings: false
+  mvc:
+    converters:
+      preferred-json-mapper: gson
+    throw-exception-if-no-handler-found: true
+server:
+  port: 8090
